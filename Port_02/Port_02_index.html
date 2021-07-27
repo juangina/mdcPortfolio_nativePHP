@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport"  content="width=device-width, intial-scale=1.0">
+        <meta name="description" content="Community drive Business">
+        <meta name="keywords"  content="Stone Mountain Business, Coffee Shop, Coffee Community, Memorial Drive">
+        <meta name="author" content="Juan E Johnson, Jordan E. Johnson">
+        <meta http-equiv="refresh" content="30">
+        <title>Let's Do Coffee | Welcome</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script>
+            function translateCoffee() {
+                document.getElementById("welcomeMessage").innerHTML = `Make Me a ${coffeeMessage}`;
+            }
+        </script>
+    </head>
+    <body>
+        <!--This is the top of the web page.  Includes the welecome title and navigation menu-->
+        <header>
+            <!--This keeps all the elements away from the sides of the screen-->
+            <div class="container">
+                <div id="branding">
+                    <h1 id="welcomeMessage">Make Me a <span class="highlight">Cup</span></h1>
+                    <h4>Press the Button for a Surprise Message</h4>
+                    <button type="button" onclick="translateCoffee()">Press</button>
+                </div>
+                <nav>
+                    <ul>
+                        <li class="current" ><a href="Port_02_index.html">Welcome</a></li>
+                        <li><a href="Port_02_about.html">About</a></li>
+                        <li><a href="Port_02_events.html">Events</a></li>
+                        <li><a href="Port_02_location.html">Find Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!--This is the main landing page showcase.  This is the eyecatcher.  Plan this well-->
+        <section id="showcase">
+            <div class="container">
+                <h1>Start and End Your Day with a Memory</h1>
+            <p>Helping communities connect by offering a quality cup of Joe.</p>
+            </div>  
+        </section>
+
+        <!--Quickly offer your visitors a chance to connect-->
+        <section id="newsletter">
+            <div class="container">
+                <h1>Get the Latest Community News</h1>
+                <form>
+                    <input type="email" placeholder="Enter Your Email...">
+                    <button type="submit" class="button_1">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+        <!--Let your visitors know your top three services/ideas you want to communicate-->
+        <section id="boxes">
+            <div class="container">
+                <div class="box">
+                    <img src="img/block_image_coffee_shop_002a.jpg">
+                    <h1>Pour the Cup</h1>
+                    <p>The beginning of the commitment to community</p>
+                </div>
+                <div class="box">
+                    <img src="img/block_image_coffee_shop_002b.jpg">
+                    <h1>Style the Cup</h1>
+                    <p>Let the community feel love for your presence</p>
+                </div>
+                <div class="box">
+                    <img src="img/block_image_coffee_shop_002c.jpg">
+                    <h1>Enjoy the Cup</h1>
+                    <p>Welcome into the arms of the community</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Made with <img src="./img/heart01.JPG"> from Stone Mountain</p>
+            <p>Make Me a Cup &copy; 2020</p>
+        </footer>
+        <!--JavaScript Link-->    
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
